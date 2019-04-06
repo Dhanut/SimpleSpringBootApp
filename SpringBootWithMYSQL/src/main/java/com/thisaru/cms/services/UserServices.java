@@ -13,4 +13,6 @@ public interface UserServices {
     String updateUser(UserDTO newUserDTO);
 
     Optional<UserDTO> findById(Integer id);
+    
+    void deleteUser(Integer id);
 }
