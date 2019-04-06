@@ -34,4 +34,9 @@ public class User {
     public Optional<UserDTO> getUserById(@PathVariable Integer id){
         return  userServices.findById(id);
     }
+    
+    @DeleteMapping("/delete/{id}")
+    public void deleteUser(@PathVariable Integer id){
+        userServices.deleteUser(id);
+    }
 }
